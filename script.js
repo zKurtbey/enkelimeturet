@@ -1,8 +1,3 @@
-const plybtn = document.querySelector('.btn');
-plybtn.addEventListener("click", () => {
-  plybtn.style.animation="bb 1s ease-in-out forwards";
-  start();
-});
 let tik = 0;
 document.body.addEventListener("keypress", function(event) {
   tik++;
@@ -13,13 +8,15 @@ document.body.addEventListener("keypress", function(event) {
     }
   }
 });
-plybtn.addEventListener('click', () => {
-  start();
-});
 let lastword = [];
 let a = 0;
 const checkbox = document.querySelector('.chck');
 let container = document.getElementById('container');
+const plybtn = document.querySelector('.btn');
+plybtn.addEventListener("click", () => {
+  plybtn.style.animation="bb 1s ease-in-out forwards";
+  start();
+});
 function start() {
   tik = 2;
   if(checkbox.checked){
@@ -151,8 +148,8 @@ function createNewDiv() {
       newInput.setAttribute("oninput", "moveToNextInput(this)");
     newInput.maxLength = 1;
     }
-    document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
-    document.querySelectorAll('.hrf')[2].setAttribute('id', 'sonharf');
+    document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+    document.querySelectorAll('.kel input')[2].setAttribute('id', 'sonharf');
   }else if (a <= 10){
       for(i = 0; i < 4; i++){ 
         var newInput = document.createElement('input');
@@ -162,8 +159,8 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.maxLength = 1;
       }
-      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
-      document.querySelectorAll('.hrf')[3].setAttribute('id', 'sonharf'); 
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[3].setAttribute('id', 'sonharf'); 
   }else if (a <= 15){
       for(i = 0; i < 5; i++){ 
         var newInput = document.createElement('input');
@@ -173,8 +170,8 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.maxLength = 1;
       }
-      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
-      document.querySelectorAll('.hrf')[4].setAttribute('id', 'sonharf'); 
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[4].setAttribute('id', 'sonharf'); 
   }else if (a <= 20){
       for(i = 0; i < 6; i++){ 
         var newInput = document.createElement('input');
@@ -184,8 +181,8 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.maxLength = 1;
       }
-      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
-      document.querySelectorAll('.hrf')[5].setAttribute('id', 'sonharf'); 
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[5].setAttribute('id', 'sonharf'); 
   }else if (a > 20){
       for(i = 0; i < 7; i++){ 
         var newInput = document.createElement('input');
@@ -195,8 +192,8 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.maxLength = 1;
       }
-      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
-      document.querySelectorAll('.hrf')[6].setAttribute('id', 'sonharf'); 
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[6].setAttribute('id', 'sonharf'); 
   }
   if(document.querySelector('.gk')){
       let i = document.querySelectorAll('.gk').length - 1;
