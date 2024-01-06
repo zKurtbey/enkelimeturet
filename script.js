@@ -1,5 +1,5 @@
 const plybtn = document.querySelector('.btn');
-plybtn.addEventListener('click', () => {
+plybtn.addEventListener("click", () => {
   plybtn.style.animation="bb 1s ease-in-out forwards";
   start();
 });
@@ -326,19 +326,3 @@ lastword = [];
     }, 1000);
   }, 2000);
 }
-
-});
-const plybtn = document.querySelector('.btn');
-plybtn.addEventListener("click", () => {
-  plybtn.style.animation="bb 1s ease-in-out forwards";
-  start();
-});
-let tik = 0;
-document.body.addEventListener("keypress", function(event) {
-  tik++;
-  if(tik < 2){
-    if(event.key === "Enter") {
-      plybtn.style.animation="bb 1s ease-in-out forwards";
-      start();
-    }
-  }
