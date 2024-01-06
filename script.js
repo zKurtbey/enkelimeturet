@@ -210,6 +210,7 @@ function createNewDiv() {
       }
     a++;
 }
+}
 function triggerBackgroundAnimation() {
   const yzd = 2;
   const snkyzd = parseFloat(document.body.style.backgroundPosition) || 0;
@@ -263,7 +264,7 @@ function harfuyus(){
       document.querySelectorAll('.kel input').forEach((input) => {
         input.value="";
         input.maxLength = 1;
-    });
+      });
     }, 200);
     document.querySelector(".kel input").focus();
     document.querySelector(".kel").style="";
