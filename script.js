@@ -129,31 +129,66 @@ function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
   container.appendChild(newDiv);
-  a++;
   console.log(a);
   if (a <= 5){
-    var newInput = document.createElement('input');
-      newInput.type = 'text';
-      newDiv.appendChild(newInput);
-      newInput.classList.add("hrf");
-      newInput.setAttribute("oninput", "moveToNextInput(this)");
-      newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
+    for(i = 0; i < 3; i++;){ 
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
       newInput.classList.add("hrf");
       newInput.setAttribute("oninput", "moveToNextInput(this)");
     newInput.maxLength = 1;
-      var newInput = document.createElement('input');
-      newInput.type = 'text';
-      newDiv.appendChild(newInput);
-      newInput.classList.add("hrf");
-      newInput.setAttribute("oninput", "moveToNextInput(this)");
-      document.querySelector(".kel .hrf").focus();
-      newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
+    }
+    document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
+    document.querySelectorAll('.hrf')[2].setAttribute('id', 'sonharf');
+  }else if (a <= 10){
+      for(i = 0; i < 4; i++;){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.hrf')[3].setAttribute('id', 'sonharf'); 
+    }
+  }else if (a <= 15){
+      for(i = 0; i < 5; i++;){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.hrf')[4].setAttribute('id', 'sonharf'); 
+    }
+  }else if (a <= 20){
+      for(i = 0; i < 6; i++;){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.hrf')[5].setAttribute('id', 'sonharf'); 
+  }else if (a > 20){
+      for(i = 0; i < 7; i++;){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.hrf')[6].setAttribute('id', 'sonharf'); 
+    }
+  if(document.querySelector('.gk')){
       let i = document.querySelectorAll('.gk').length - 1;
       if(otoekle === "var"){
         const gkson = document.querySelectorAll(".gk")[i];
@@ -163,149 +198,7 @@ function createNewDiv() {
       } else{
       document.querySelectorAll('.kel input')[0].focus();
       }
-    }
-  }else if (a <= 10){
-        var newInput = document.createElement('input');
-        newInput.type = 'text';
-        newDiv.appendChild(newInput);
-        newInput.classList.add("hrf");
-        newInput.setAttribute("oninput", "moveToNextInput(this)");
-        newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-        for (var i = 0; i < 2; i++) {
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.maxLength = 1;
-        }
-        var newInput = document.createElement('input');
-        newInput.type = 'text';
-        newDiv.appendChild(newInput);
-        newInput.classList.add("hrf");
-        newInput.setAttribute("oninput", "moveToNextInput(this)");
-        document.querySelector(".kel .hrf").focus();
-        newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-    if(otoekle == "var"){
-      const gkson = document.querySelectorAll(".gk")[i];
-      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[1].focus();
-    } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a <= 15){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 3; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            const maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a <= 20){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 4; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            newInput.maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a > 20){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 4; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            newInput.maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-      a++;
-    }
-}
+    a++;
 }
 function triggerBackgroundAnimation() {
   const yzd = 2;
