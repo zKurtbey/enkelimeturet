@@ -310,8 +310,8 @@ function createNewDiv() {
       } else{
       document.querySelectorAll('.kel input')[0].focus();
       }
+      a++;
     }
-  a++;
 }
 }
 function triggerBackgroundAnimation() {
