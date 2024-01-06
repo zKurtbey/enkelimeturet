@@ -164,7 +164,6 @@ function createNewDiv() {
       }
       document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
       document.querySelectorAll('.hrf')[3].setAttribute('id', 'sonharf'); 
-    }
   }else if (a <= 15){
       for(i = 0; i < 5; i++){ 
         var newInput = document.createElement('input');
@@ -176,7 +175,6 @@ function createNewDiv() {
       }
       document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
       document.querySelectorAll('.hrf')[4].setAttribute('id', 'sonharf'); 
-    }
   }else if (a <= 20){
       for(i = 0; i < 6; i++){ 
         var newInput = document.createElement('input');
@@ -199,7 +197,7 @@ function createNewDiv() {
       }
       document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
       document.querySelectorAll('.hrf')[6].setAttribute('id', 'sonharf'); 
-    }
+  }
   if(document.querySelector('.gk')){
       let i = document.querySelectorAll('.gk').length - 1;
       if(otoekle === "var"){
