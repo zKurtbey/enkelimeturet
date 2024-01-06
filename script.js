@@ -250,7 +250,7 @@ function dogru(){
     }, 100);
 }
 function harfuyus(){
-  document.getElementById("hatasebep").innerHTML="Check your first letter!";
+  document.getElementById("hatasebep").innerHTML="Check its first letter!";
   document.querySelector("#hata").style="animation: hatavar 1.25s ease-in-out alternate; animation-iteration-count: 2";
   setTimeout(() => {
     document.querySelector("#hata").style="";
