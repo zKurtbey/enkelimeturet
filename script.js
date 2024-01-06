@@ -130,9 +130,8 @@ async function combineValues() {
               yenilgi.style="";
               vignette.style="";
             }, 3000);
-            });
+          });
       }, 1200);
-
   }
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
