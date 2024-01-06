@@ -1,23 +1,8 @@
-const plybtn = document.querySelector('.btn');
-plybtn.addEventListener("click", () => {
-  plybtn.style.animation="bb 1s ease-in-out forwards";
-  start();
-});
-let tik = 0;
-document.body.addEventListener("keypress", function(event) {
-  tik++;
-  if(tik < 2){
-    if(event.key === "Enter") {
-      plybtn.style.animation="bb 1s ease-in-out forwards";
-      start();
-    }
-  }
-});
-let lastword = [];
-let a = 0;
-const checkbox = document.querySelector('.chck');
-let container = document.getElementById('container');
-function start() {
+document.querySelector('#loadtext').innerHTML='LOADING...';
+window.addEventListener(('load'), function(){
+  document.querySelector('#load').style='opacity: 0';
+  document.querySelector('#loadtext').style='opacity: 0';
+  function start() {
   tik = 2;
   if(checkbox.checked){
   otoekle = "var";
@@ -431,3 +416,24 @@ lastword = [];
     }, 1000);
   }, 2000);
 }
+
+});
+const plybtn = document.querySelector('.btn');
+plybtn.addEventListener("click", () => {
+  plybtn.style.animation="bb 1s ease-in-out forwards";
+  start();
+});
+let tik = 0;
+document.body.addEventListener("keypress", function(event) {
+  tik++;
+  if(tik < 2){
+    if(event.key === "Enter") {
+      plybtn.style.animation="bb 1s ease-in-out forwards";
+      start();
+    }
+  }
+});
+let lastword = [];
+let a = 0;
+const checkbox = document.querySelector('.chck');
+let container = document.getElementById('container');
