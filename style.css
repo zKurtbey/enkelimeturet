@@ -17,6 +17,18 @@ body {
   background-position: 0% 0%;
   transition: background-position .5s ease-in-out;
 }
+  #load{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 233, 234);
+    z-index: 15;
+    display: block;
+    transition: all .5s;
+  }
+  #loadtext{
+    font-family: josefin sans;
+    font-size: 15px;
+  }
 #klm {
   font-family: Rubik Doodle Shadow;
   position: absolute;
