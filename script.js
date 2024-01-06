@@ -88,7 +88,8 @@ async function combineValues() {
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
-    const sozluk = wordsText.split('\n');
+    const sozluka = wordsText.toLowerCase();
+    const sozluk = sozluka.split('\n');
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
