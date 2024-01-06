@@ -1,7 +1,20 @@
-document.querySelector('#loadtext').innerHTML='LOADING...';
-window.addEventListener(('load'), function(){
-  document.querySelector('#load').style='opacity: 0';
-  document.querySelector('#loadtext').style='opacity: 0';
+const plybtn = document.querySelector('.btn');
+plybtn.addEventListener('click', () => {
+  plybtn.style.animation="bb 1s ease-in-out forwards";
+  start();
+});
+let tik = 0;
+document.body.addEventListener("keypress", function(event) {
+  tik++;
+  if(tik < 2){
+    if(event.key === "Enter") {
+      plybtn.style.animation="bb 1s ease-in-out forwards";
+      start();
+    }
+  }
+});
+plybtn.addEventListener('click', () => {
+  start();
 });
 let lastword = [];
 let a = 0;
