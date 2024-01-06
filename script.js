@@ -143,7 +143,7 @@ function createNewDiv() {
   container.appendChild(newDiv);
   console.log(a);
   if (a <= 5){
-    for(i = 0; i < 3; i++;){ 
+    for(i = 0; i < 3; i++){ 
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
@@ -154,7 +154,7 @@ function createNewDiv() {
     document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
     document.querySelectorAll('.hrf')[2].setAttribute('id', 'sonharf');
   }else if (a <= 10){
-      for(i = 0; i < 4; i++;){ 
+      for(i = 0; i < 4; i++){ 
         var newInput = document.createElement('input');
         newInput.type = 'text';
         newDiv.appendChild(newInput);
@@ -166,7 +166,7 @@ function createNewDiv() {
       document.querySelectorAll('.hrf')[3].setAttribute('id', 'sonharf'); 
     }
   }else if (a <= 15){
-      for(i = 0; i < 5; i++;){ 
+      for(i = 0; i < 5; i++){ 
         var newInput = document.createElement('input');
         newInput.type = 'text';
         newDiv.appendChild(newInput);
@@ -178,7 +178,7 @@ function createNewDiv() {
       document.querySelectorAll('.hrf')[4].setAttribute('id', 'sonharf'); 
     }
   }else if (a <= 20){
-      for(i = 0; i < 6; i++;){ 
+      for(i = 0; i < 6; i++){ 
         var newInput = document.createElement('input');
         newInput.type = 'text';
         newDiv.appendChild(newInput);
@@ -189,7 +189,7 @@ function createNewDiv() {
       document.querySelectorAll('.hrf')[0].setAttribute('id', 'basharf');
       document.querySelectorAll('.hrf')[5].setAttribute('id', 'sonharf'); 
   }else if (a > 20){
-      for(i = 0; i < 7; i++;){ 
+      for(i = 0; i < 7; i++){ 
         var newInput = document.createElement('input');
         newInput.type = 'text';
         newDiv.appendChild(newInput);
