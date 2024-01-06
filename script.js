@@ -2,7 +2,12 @@ document.querySelector('#loadtext').innerHTML='LOADING...';
 window.addEventListener(('load'), function(){
   document.querySelector('#load').style='opacity: 0';
   document.querySelector('#loadtext').style='opacity: 0';
-  function start() {
+});
+let lastword = [];
+let a = 0;
+const checkbox = document.querySelector('.chck');
+let container = document.getElementById('container');
+function start() {
   tik = 2;
   if(checkbox.checked){
   otoekle = "var";
@@ -432,8 +437,3 @@ document.body.addEventListener("keypress", function(event) {
       start();
     }
   }
-});
-let lastword = [];
-let a = 0;
-const checkbox = document.querySelector('.chck');
-let container = document.getElementById('container');
